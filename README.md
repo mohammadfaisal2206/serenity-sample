@@ -35,3 +35,4 @@
 	1. Java JDK 1.8 or higher
 	2. Maven should be installed
 	3. Edge and Firefox should be installed (If Firefox is not installed in the default directory, then specify the root directory (where FF is installed) in the serenity.properties file)
+	4. All browsers should be latest versions (compatible with driver versions: Gecko: 0.19.1, Edge: 16229)

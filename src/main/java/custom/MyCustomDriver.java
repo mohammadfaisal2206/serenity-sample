@@ -51,17 +51,16 @@ public class MyCustomDriver implements DriverSource{
 	        capabilities.setCapability("applicationCacheEnabled", false);
 	        capabilities.setCapability("platform", Platform.ANY);
 	        @SuppressWarnings("deprecation")
-			FirefoxDriver driver = new FirefoxDriver(capabilities);
-	        return driver;
+			FirefoxDriver ffdriver = new FirefoxDriver(capabilities);
+	        return ffdriver;
 
 		case "chrome":
 		default:
-			System.out.println("Its chrome");
 			DesiredCapabilities caps = DesiredCapabilities.chrome();
 			String driverDirChrome = System.getProperty("user.dir") + chromeDir;
             System.setProperty("webdriver.chrome.driver", driverDirChrome);
-            ChromeDriver driver2 = new ChromeDriver(caps);
-			return driver2;
+            @SuppressWarnings("deprecation") ChromeDriver chromeDriver = new ChromeDriver(caps);
+			return chromeDriver;
 		}
 		
 		

@@ -31,7 +31,7 @@ public class CMSResponseSteps {
 	 * */
 	@Before
 	public void setup() {
-		RestAssured.proxy = host("proxy.hm.com").withPort(8080);
+		//RestAssured.proxy = host("xx.xx.xxx").withPort(xxxx);
 		RestAssured.useRelaxedHTTPSValidation();
 	}
 
